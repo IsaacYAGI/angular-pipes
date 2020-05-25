@@ -12,6 +12,8 @@ export class AppComponent {
   porcentaje: number = 0.235;
   salario: number = 1234.5;
 
+  idioma: string = 'es';
+
   valorPromesa = new Promise<string>(resolve => {
     setTimeout(() =>{
       resolve("Llego la data");
@@ -29,4 +31,8 @@ export class AppComponent {
       casa: 20
     }
   };
+
+  cambiarIdioma(idioma: | 'en' | 'es' | 'fr' ): void{
+    this.idioma = idioma;
+  }
 }

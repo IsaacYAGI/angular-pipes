@@ -38,6 +38,24 @@
           <td>slice:1:5</td>
           <td>{{arreglo | slice:1:5}}</td>
         </tr>
+        <tr>
+          <!--Muestra los numeros redondeando -->
+          <td>{{PI}}</td>
+          <td>number</td>
+          <td>{{PI | number}}</td>
+        </tr>
+        <tr>
+          <!--La cantidad de enteros debe ser de al menos 3. Si el numero no cumple, se completa con ceros adelante-->
+          <td>{{PI}}</td>
+          <td>number:'3.0-0'</td>
+          <td>{{PI | number:'3.0-0'}}</td>
+        </tr>
+        <tr>
+          <!--Toma todos los enteros que haya y solo toma de 0 a dos decimales-->
+          <td>{{PI}}</td>
+          <td>number:'.0-2'</td>
+          <td>{{PI | number:'.0-2'}}</td>
+        </tr>
       </tbody>
     </table>
 

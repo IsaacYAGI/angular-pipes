@@ -13,6 +13,8 @@ export class AppComponent {
   porcentaje: number = 0.235;
   salario: number = 1234.5;
 
+  videoUrl: string = "https://www.youtube.com/embed/LYU-8IFcDPw";
+
   idioma: string = 'es';
 
   valorPromesa = new Promise<string>(resolve => {

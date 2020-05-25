@@ -31,8 +31,4 @@ export class AppComponent {
       casa: 20
     }
   };
-
-  cambiarIdioma(idioma: | 'en' | 'es' | 'fr' ): void{
-    this.idioma = idioma;
-  }
 }

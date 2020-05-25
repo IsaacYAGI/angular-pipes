@@ -139,6 +139,17 @@
             <button class="mr-1 btn btn-success" (click)="idioma = 'fr'">Francés</button>
           </td>
         </tr>
+        <tr>
+          <td>{{ nombre }}</td>
+          <td>
+            contrasena: {{activar}}
+            <br>
+            <button class="btn btn-outline-primary" (click)="activar = !activar">
+              Activar/Desactivar
+            </button>
+          </td>
+          <td>{{ nombre | ocultarpassword:activar}}</td>
+        </tr>
       </tbody>
     </table>
 
